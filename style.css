@@ -1,0 +1,173 @@
+@charset "UTS-8";
+
+:root{
+    --cor01: rgb(255, 190, 0);
+    --cor02: rgb(90, 90, 90);
+    --cor03: rgb(130, 130, 130);
+    --cor04: rgb(220, 220, 220);
+    --cor05: rgb(245, 245, 245);
+    --cor06: rgb(245, 182, 0);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--cor05);
+}
+
+
+/* ESTILOS DO HEADER ============================== */
+
+header{
+    background-color: var(--cor01);
+    padding-top: 20px;
+    font-size: 1.25em;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header span{
+    color: var(--cor02);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--cor06);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+header a:hover{
+    background-color: white;
+    color: var(--cor01);
+}
+
+header a:active{
+    background-color: var(--cor03);
+}
+
+
+/* ESTILOS DO MAIN ====================================== */
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#main__div-postagens{
+    max-width: 800px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.link-comum{
+    color: var(--cor01);
+    text-decoration: none;
+}
+.link-comum:hover{
+    text-decoration: underline;
+}
+
+/* == POSTAGEM == */
+
+.postagem{
+    margin-bottom: 40px;
+}
+.postagem > img{
+    width: 100%;
+}
+.postagem > p{
+    margin: 10px 0px 0px 0px;
+    text-align: justify;
+}
+
+.postagem__titulo{
+    margin-bottom: 10px;
+}
+.postagem__titulo h2{
+    color: var(--cor01);
+    margin-bottom: 3px;
+}
+.postagem__titulo p{
+    font-size: 0.8em;
+}
+
+/* == ASIDE MAIN == */
+
+#main__aside{
+    max-width: 250px;
+    display: flex;
+    align-self: flex-start; /* para o sticky funcionar num elemento com um flex como pai, tem q adicionar essa linha */
+    flex-direction: column;
+    gap: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#main__aside hr{
+    margin: 8px 0px;
+}
+
+.main-aside__section h3{
+    background-color: var(--cor04);
+    color: var(--cor02);
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.post-minitatura{
+    font-size: 0.9em;
+}
+
+.main-aside__section nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+/* ESTILOS DO FOOTER ========================== */
+
+footer{
+    background-color: var(--cor01);
+    padding: 10px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
